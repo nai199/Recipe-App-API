@@ -6,6 +6,7 @@ from psycopg2 import OperationalError as Psycopg2pError
 from django.core.management import call_command
 from django.db.utils import OperationalError
 from django.test import SimpleTestCase
+
 @patch('core.management.commands.wait_for_db.Command.check')
 class CommandsTests(SimpleTestCase):
 
